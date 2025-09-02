@@ -1,0 +1,928 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 10;
+    padding-right: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+h3 {
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    font-weight: bolder;
+}
+
+.avengerlogo {
+    position: absolute;
+    position: center;
+    top: 10px;
+}
+
+.card0 {
+    --clr: #000000;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card0:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card0 .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card0 .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #000000;
+    border: 8px solid var(--clr);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.card0:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+
+.card0 .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card0:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card0 .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card0:hover .product_img {
+    transition-delay: 0.8s;
+    top: 25%;
+    left: 75%;
+    height: 530px;
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 1;
+    ;
+}
+
+.card0 .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card0:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.card0 .content h2 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card0 .content a {
+    position: relative;
+    color: #fff;
+    background: #f5b326;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/*------------------------------IRON MAN------------------------------ */
+
+.card {
+    --clr: #c8483a;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.card:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+
+.card .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .product_img {
+    transition-delay: 0.8s;
+    top: 25%;
+    left: 75%;
+    height: 530px;
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 1;
+    ;
+}
+
+.card .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.card .content h2 {
+    color: #e9c537;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .content p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.card .content a {
+    position: relative;
+    color: #fff;
+    background: #f5b326;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/*------------------------------CAPTAIN AMERICA------------------------------ */
+
+.card1 {
+    --clr: #2f88e1;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card1:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card1 .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.card1:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+
+.card1 .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card1:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card1 .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card1:hover .product_img {
+    transition-delay: 0.8s;
+    top: 25%;
+    left: 75%;
+    height: 530px;
+    transform: translate(-50%, -50%) scale(1.1) translateY(-10px);
+    ;
+}
+
+.card1 .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card1:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.card1 .content h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card1 .content p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.card1 .content a {
+    position: relative;
+    color: #fff;
+    background: #d52b1e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/*------------------------------HULK------------------------------ */
+
+.card2 {
+    --clr: #3e7622;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card2:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card2 .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.card2:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+
+.card2 .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card2:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card2 .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card2:hover .product_img {
+    transition-delay: 0.8s;
+    top: 10%;
+    left: 50%;
+    height: 400px;
+    transform: perspective(400px) translateZ(50px);
+}
+
+.card2 .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card2:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.card2 .content h2 {
+    color: #e9c537;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card2 .content p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.card2 .content a {
+    position: relative;
+    color: #ffffff;
+    background: #37a145;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/*------------------------------THOR ------------------------------ */
+
+.card3 {
+    --clr: #626461;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card3:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card3 .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card3 .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.card3:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+
+.card3 .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card3:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card3 .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 900px;
+    transition: 0.5s ease-in-out;
+}
+
+.card3:hover .product_img {
+    transition-delay: 0.8s;
+    top: 25%;
+    left: 75%;
+    height: 700px;
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 1;
+}
+
+.card3 .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card3:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.card3 .content h2 {
+    color: #f50a0a;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card3 .content p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.card3 .content a {
+    position: relative;
+    color: #fff;
+    background: #21a6df;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/*------------------------------HAWKEYE------------------------------ */
+
+.card4 {
+    --clr: #cd16ed;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card4:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card4 .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card4 .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.card4:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+
+.card4 .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card4:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card4 .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 400px;
+    transition: 0.5s ease-in-out;
+}
+
+.card4:hover .product_img {
+    transition-delay: 0.8s;
+    top: 25%;
+    left: 75%;
+    height: 700px;
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 1;
+}
+
+.card4 .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card4:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.card4 .content h2 {
+    color: #e9c537;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card4 .content p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.card4 .content a {
+    position: relative;
+    color: #fff;
+    background: #e9c537;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/*------------------------------BLACK WIDOW------------------------------ */
+
+.card5 {
+    --clr: #eed810;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card5:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card5 .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card5 .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.card5:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+
+.card5 .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card5:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card5 .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 400px;
+    transition: 0.5s ease-in-out;
+}
+
+.card5:hover .product_img {
+    transition-delay: 0.8s;
+    top: 25%;
+    left: 75%;
+    height: 700px;
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 1;
+}
+
+.card5 .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card5:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.card5 .content h2 {
+    color: #f35314;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card5 .content p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.card5 .content a {
+    position: relative;
+    color: #fff;
+    background: #f35314;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+}
